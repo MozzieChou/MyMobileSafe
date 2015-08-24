@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="60dip"
+        android:gravity="center"
+        android:text="我的手机卫士"
+        android:textColor="@color/white"
+        android:background="@color/green"
+        android:textSize="24sp" />
+
+
+    <GridView
+        android:id="@+id/gv_main"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:numColumns="3"
+        android:background="@color/white">
+    </GridView>
+
+</LinearLayout>

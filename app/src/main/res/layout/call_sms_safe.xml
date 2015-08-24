@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:gravity="center"
+        android:background="@color/green"
+        android:textColor="@color/white"
+        android:textSize="26sp"
+        android:text="通讯卫士"
+         />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_marginTop="5dip"
+        android:background="@drawable/devide_line" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+        <LinearLayout
+            android:id="@+id/ll_call_sms_safe_loading"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="invisible" >
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="正在加载数据..." />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/lv_call_sms_safe"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/button"
+            android:background="@color/white"
+            android:textColor="@color/green"
+            android:textSize="20sp">
+        </ListView>
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_alignParentRight="true"
+            android:onClick="addBlackNumber"
+            android:text="添加黑名单号码"
+            android:id="@+id/button" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#ff6cbd45" >
+        
+        
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:gravity="center"
+            android:background="@color/green"
+            android:textColor="@color/white"
+            android:textSize="26sp"
+            android:text="缓存清理"
+            />
+    </LinearLayout>
+    
+  <ProgressBar
+       android:id="@+id/progressBar1"
+
+       style="?android:attr/progressBarStyleHorizontal"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+      ></ProgressBar>
+    
+  <TextView
+       style="@style/text_content"
+       android:text="正在扫描...."
+        android:id="@+id/tv_clean_cache_status"
+      />  
+  <ScrollView
+      android:layout_height="fill_parent"
+      android:layout_width="fill_parent"
+      android:orientation="vertical"
+      >
+  <LinearLayout
+       android:layout_width="fill_parent"
+       android:layout_height="fill_parent"
+       android:id="@+id/ll_clean_cache_cont"
+       android:orientation="vertical">
+  </LinearLayout>
+  </ScrollView> 
+</LinearLayout>

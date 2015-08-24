@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/text_title_style"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:gravity="center"
+        android:background="@color/green"
+        android:textColor="@color/white"
+        android:textSize="26sp"
+        android:text="1.欢迎使用手机防盗"/>
+
+
+    <TextView
+        style="@style/text_content_style"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:layout_marginTop="8dip"
+        android:text="您的手机防盗卫士:"
+        android:background="@color/white"
+        android:textColor="@color/green"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:orientation="horizontal" >
+
+        <ImageView
+            style="@style/image_start_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            style="@style/text_content_style"
+            android:paddingTop="5dip"
+            android:text="sim卡变更报警"
+            android:background="@color/white"
+            android:textColor="@color/green"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageView style="@style/image_start_style" />
+
+        <TextView
+            style="@style/text_content_style"
+            android:paddingTop="5dip"
+            android:text="GPS追踪"
+            android:background="@color/white"
+            android:textColor="@color/green"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageView style="@style/image_start_style" />
+
+        <TextView
+            style="@style/text_content_style"
+            android:paddingTop="5dip"
+            android:text="远程数据销毁"
+            android:background="@color/white"
+            android:textColor="@color/green"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageView style="@style/image_start_style" />
+
+        <TextView
+            style="@style/text_content_style"
+            android:paddingTop="5dip"
+            android:text="远程锁屏"
+            android:background="@color/white"
+            android:textColor="@color/green"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <ImageView style="@style/image_online_style" />
+
+        <ImageView style="@style/image_offline_style" />
+
+        <ImageView style="@style/image_offline_style" />
+
+        <ImageView style="@style/image_offline_style" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent" >
+		<ImageView 
+		    style="@style/image_logo_style"
+		    android:src="@drawable/setup1"
+		    />
+        <Button style="@style/button_next_style" 
+            />
+    </RelativeLayout>
+
+</LinearLayout>

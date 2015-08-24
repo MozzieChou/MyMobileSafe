@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <TextView
+        style="@style/text_title_style"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:gravity="center"
+        android:background="@color/green"
+        android:textColor="@color/white"
+        android:textSize="26sp"
+        android:text="常用号码"/>
+
+
+    <ExpandableListView
+        android:id="@+id/elv_common_num"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:textColor="@color/green"
+        android:textSize="20sp">
+    </ExpandableListView>
+
+</LinearLayout>
